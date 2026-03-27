@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mega Glass Calculator</title>
+    <link rel="stylesheet" href="tor.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Background Orbs -->
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+
+    <!-- 3D Tilt Container -->
+    <div class="tilt-container" id="tilt-card">
+        <!-- The "Amazing" Animated Border is created via CSS on this class -->
+        <div class="calculator-glass">
+            
+            <!-- Header -->
+            <div class="header">
+                <span class="brand">MEGA CALC</span>
+                <div class="status-light"></div>
+            </div>
+
+            <!-- Display -->
+            <div class="screen-container">
+                <div class="screen-glare"></div>
+                <div class="history" id="previous-operand"></div>
+                <div class="current" id="current-operand">0</div>
+            </div>
+
+            <!-- Keypad with Larger Buttons -->
+            <div class="keypad">
+                <button class="btn btn-danger span-two" data-action="clear">AC</button>
+                <button class="btn btn-func" data-action="delete">DEL</button>
+                <button class="btn btn-op" data-operation="÷">÷</button>
+                
+                <button class="btn" data-number>7</button>
+                <button class="btn" data-number>8</button>
+                <button class="btn" data-number>9</button>
+                <button class="btn btn-op" data-operation="×">×</button>
+                
+                <button class="btn" data-number>4</button>
+                <button class="btn" data-number>5</button>
+                <button class="btn" data-number>6</button>
+                <button class="btn btn-op" data-operation="-">−</button>
+                
+                <button class="btn" data-number>1</button>
+                <button class="btn" data-number>2</button>
+                <button class="btn" data-number>3</button>
+                <button class="btn btn-op" data-operation="+">+</button>
+                
+                <button class="btn span-two" data-number>0</button>
+                <button class="btn" data-number>.</button>
+                <button class="btn btn-equal" data-action="equal">=</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="cul.js"></script>
+</body>
+</html>
